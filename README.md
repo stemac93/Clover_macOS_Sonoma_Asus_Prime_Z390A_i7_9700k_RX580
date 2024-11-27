@@ -18,7 +18,7 @@ For USB ports I builded USBMap.kext with usb3 disabled to the 2 dark blue ports 
 | SSD1 | Samsung | 980 Evo 512gb nvme | | Main SSD Mac OS |
 | Wireless | Broadcom | BCM94360CD | built-in | |
 | Ethernet | Intel | I219-V | [IntelMausi](https://github.com/acidanthera/IntelMausi) | |
-| Audio | Realtek | ALC S1220A | [AppleALC](https://github.com/acidanthera/AppleALC) | Layout in DeviceProps |
+| Audio | Realtek | ALC S1220A | [AppleALC](https://github.com/acidanthera/AppleALC) | |
 
 
 
