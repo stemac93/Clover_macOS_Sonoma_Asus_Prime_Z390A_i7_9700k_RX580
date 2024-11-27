@@ -1,5 +1,5 @@
 # Clover_macOS_Sonoma_Asus_Prime_Z390A_i7_9700k_RX580
-This is a Clover version of ASUS Z390-A Prime Hackintosh EFI. It works on macOS Monterey 14,4). Sleep, Airdrop and Handoff are supported.
+This is a Clover version of ASUS Z390-A Prime Hackintosh EFI. It works on macOS Monterey 14,4. Sleep, Airdrop and Handoff are supported.
 
 
 
