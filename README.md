@@ -52,7 +52,7 @@ No issues found
 ## Acknowledgement
 Apple for macOS
 
-acidanthera for OpenCore etc.
+CloverHackyColor for Clover Bootloader
 
 headkaze for Hackintool
 
