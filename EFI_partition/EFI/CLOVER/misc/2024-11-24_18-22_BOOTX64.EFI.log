@@ -1,0 +1,575 @@
+0:100  0:100  MemLog inited, TSC freq: 3600485120
+0:100  0:000  CPU was calibrated with RTC
+0:100  0:000  CloverX64 : Image base = 0x6D404000
+0:100  0:000  Clover ImageHandle = 75edbd18
+0:102  0:002  SelfDirPath = \EFI\CLOVER
+0:103  0:001  === [ Starting Clover ] =========================
+0:103  0:000  Now is 24.11.2024,  18:22:55 (GMT)
+0:103  0:000  Starting Clover revision: 5160 (master, commit 7b08a616e) on American Megatrends EFI
+0:103  0:000  Build id: 20240909210805-7b08a61-dirty
+0:103  0:000  Build with: [Args: -D NO_GRUB_DRIVERS_EMBEDDED -D LESS_DEBUG -t GCC131 | --cmd-len=50000 -D NO_GRUB_DRIVERS_EMBEDDED -D LESS_DEBUG --conf=/Users/sergey/src/CloverBootloader/Conf -D USE_LOW_EBDA -a X64 -b RELEASE -t GCC131 -n 5 | OS: 15]
+0:103  0:000  === [ Get Smbios ] ==============================
+0:103  0:000  Type 16 Index = 0
+0:103  0:000  Total Memory Slots Count = 4
+0:103  0:000  Type 17 Index = 0
+0:103  0:000  SmbiosTable.Type17->SlotIndex = 0
+0:103  0:000  SmbiosTable.Type17->ModuleSize = 8192MB
+0:103  0:000  SmbiosTable.Type17->Type = 0
+0:103  0:000  SmbiosTable.Type17->Frequency = 3200MHz
+0:103  0:000  SmbiosTable.Type17->Bank/Device = BANK 0 ChannelA-DIMM1
+0:103  0:000  SmbiosTable.Type17->Vendor = Corsair
+0:103  0:000  SmbiosTable.Type17->SerialNo = 00000000
+0:103  0:000  SmbiosTable.Type17->PartNo = CMK16GX4M2K4266C19
+0:103  0:000  Type 17 Index = 1
+0:103  0:000  SmbiosTable.Type17->SlotIndex = 1
+0:103  0:000  SmbiosTable.Type17->ModuleSize = 8192MB
+0:103  0:000  SmbiosTable.Type17->Type = 0
+0:103  0:000  SmbiosTable.Type17->Frequency = 3200MHz
+0:103  0:000  SmbiosTable.Type17->Bank/Device = BANK 1 ChannelA-DIMM2
+0:103  0:000  SmbiosTable.Type17->Vendor = Corsair
+0:103  0:000  SmbiosTable.Type17->SerialNo = 00000000
+0:103  0:000  SmbiosTable.Type17->PartNo = CMK16GX4M2K4266C19
+0:103  0:000  Type 17 Index = 2
+0:103  0:000  Ignoring insane frequency value 0MHz
+0:103  0:000  Type 17 Index = 3
+0:103  0:000  Ignoring insane frequency value 0MHz
+0:103  0:000  Boot status=0
+0:103  0:000  Running on: 'System Product Name' with board 'PRIME Z390-A'
+0:103  0:000  === [ GetCPUProperties ] ========================
+0:103  0:000  CPU Vendor = 756E6547 Model=906EC
+0:103  0:000   The CPU supported SSE4.1
+0:103  0:000   The CPU supported RDRAND
+0:103  0:000  BrandString = Intel(R) Core(TM) i7-9700K CPU @ 3.60GHz
+0:103  0:000   The CPU supported turbo
+0:103  0:000   Energy PerfBias is  visible:
+0:103  0:000  MSR 0x35               80008
+0:103  0:000   TSC/CCC Information Leaf:
+0:103  0:000    numerator     : 300
+0:103  0:000    denominator   : 2
+0:103  0:000   Calibrated ARTFrequency: 24003234
+0:103  0:000   Rounded ARTFrequency: 24000000
+0:103  0:000  MSR 0xE2 before patch 1E000000
+0:103  0:000  MSR 0xCE              08080838_F1012400
+0:103  0:000  corrected FLEX_RATIO = E0000
+0:103  0:000  MSR 0x1B0             00000000
+0:103  0:000  FSBFrequency = 109 MHz, DMI FSBFrequency = 100 MHz, Corrected FSBFrequency = 100 MHz
+0:103  0:000  MaxDiv/MinDiv: 36.0/8
+0:103  0:000  Turbo: 47/49/49/49
+0:103  0:000  Features: 0x77FAFBFFBFEBFBFF
+0:103  0:000  Threads: 8
+0:103  0:000  Cores: 8
+0:103  0:000  FSB: 100 MHz
+0:103  0:000  CPU: 3900 MHz
+0:103  0:000  TSC: 3900 MHz
+0:103  0:000  PIS: 100 MHz
+0:103  0:000  ExternalClock: 25 MHz
+0:103  0:000  === [ GetDevices ] ==============================
+0:103  0:000  GOP found at: PciRoot(0x0)/Pci(0x1,0x0)/Pci(0x0,0x0)/AcpiAdr(0x80010302)
+0:103  0:000  PCI (00|00:00.00) : 8086 3E30 class=060000
+0:103  0:000  PCI (00|00:01.00) : 8086 1901 class=060400
+0:103  0:000  PCI (00|01:00.00) : 1002 67DF class=030000
+0:103  0:000   - GFX: Model=AMD Radeon RX 480/570/580 (ATI/AMD)
+0:104  0:000   - GOP: Provided by device
+0:104  0:000  PCI (00|01:00.01) : 1002 AAF0 class=040300
+0:104  0:000   - HDMI Audio: 
+0:104  0:000  PCI (00|00:02.00) : 8086 3E98 class=038000
+0:104  0:000   - GFX: Model=Intel UHD Graphics 630 (Intel)
+0:104  0:000  PCI (00|00:14.00) : 8086 A36D class=0C0330
+0:104  0:000  PCI (00|00:14.02) : 8086 A36F class=050000
+0:104  0:000  PCI (00|00:16.00) : 8086 A360 class=078000
+0:104  0:000  PCI (00|00:17.00) : 8086 A352 class=010601
+0:104  0:000  PCI (00|00:1B.00) : 8086 A340 class=060400
+0:104  0:000  PCI (00|00:1C.00) : 8086 A338 class=060400
+0:104  0:000  PCI (00|00:1D.00) : 8086 A330 class=060400
+0:104  0:000  PCI (00|04:00.00) : 144D A808 class=010802
+0:104  0:000  PCI (00|00:1F.00) : 8086 A305 class=060100
+0:104  0:000  PCI (00|00:1F.03) : 8086 A348 class=040300
+0:104  0:000  PCI (00|00:1F.04) : 8086 A323 class=0C0500
+0:104  0:000  PCI (00|00:1F.05) : 8086 A324 class=0C8000
+0:104  0:000  PCI (00|00:1F.06) : 8086 15BC class=020000
+0:104  0:000   - LAN: 1 Vendor=Intel
+0:104  0:000  Legacy MAC address of LAN #0= 40:B0:76:DE:9E:93:
+0:104  0:000  _checkOEMPath Look for oem dir at path '\EFI\CLOVER\OEM\System Product Name--40-B0-76-DE-9E-93'. Dir doesn't exist.
+0:104  0:000  _checkOEMPath Look for oem dir at path '\EFI\CLOVER\OEM\PRIME Z390-A\UEFI'. Dir doesn't exist.
+0:104  0:000  _checkOEMPath Look for oem dir at path '\EFI\CLOVER\OEM\System Product Name'. Dir doesn't exist.
+0:104  0:000  _checkOEMPath Look for oem dir at path '\EFI\CLOVER\OEM\System Product Name-3900'. Dir doesn't exist.
+0:105  0:000  _checkOEMPath Look for oem dir at path '\EFI\CLOVER\OEM\PRIME Z390-A'. Dir doesn't exist.
+0:105  0:000  _checkOEMPath Look for oem dir at path '\EFI\CLOVER\OEM\PRIME Z390-A-3900'. Dir doesn't exist.
+0:105  0:000  === [ GetUserSettings ] =========================
+0:105  0:000  GetDefaultModel()=iMac18,3
+0:105  0:000  === [ LoadUserSettings ] ========================
+0:105  0:000  Using config.plist at path: \EFI\CLOVER
+0:106  0:000  === [ LoadUserSettings ] ========================
+0:106  0:000  Cannot find smbios.plist at path '\EFI\CLOVER' : Not Found
+0:106  0:000  '\EFI\CLOVER\smbios.plist' not loaded. Efi error Not Found
+0:106  0:000  create SMBIOS list, found 27 dicts
+0:106  0:000  ... ACPI
+0:106  0:000  ... Boot
+0:106  0:000  ... BootGraphics
+0:106  0:000  ... Devices
+0:106  0:000  ... DisableDrivers
+0:106  0:000  ... GUI
+0:106  0:000  ... Graphics
+0:106  0:000  ... KernelAndKextPatches
+0:106  0:000  ... SMBIOS
+0:106  0:000  ... SystemParameters
+0:106  0:000  ... RtVariables
+0:106  0:000  ... Quirks
+0:106  0:000  get model from config.plist
+0:106  0:000  Using latest BiosVersion from config instead of default 'IM191.88Z.F000.B00.2302212211'
+0:115  0:009  Using latest BiosReleaseDate from config instead of default '02/21/2023'
+0:119  0:003  Using latest EfiVersion from config instead of default '1968.100.16.0.1'
+0:123  0:004  BiosVersion: IM191.88Z.F000.B00.2308061817
+0:127  0:003  BiosReleaseDate: 08/06/2023
+0:131  0:003  EfiVersion: 2020.40.3.0.0
+0:135  0:004  Calibrated TSC Frequency = 3600485120 = 3600MHz
+0:139  0:003  === [ GetListOfThemes ] =========================
+0:143  0:003  - [00]: random
+0:154  0:011  - [00]: embedded
+0:162  0:008  === [ Found config plists ] =====================
+0:166  0:004  - config.plist
+0:170  0:003  - config-sample.plist
+0:174  0:004  === [ LoadDrivers ] =============================
+0:179  0:004  Loading NvmExpressDxe.efi status=Success
+0:192  0:012   - driver needs connecting
+0:196  0:003  Loading EnglishDxe.efi status=Success
+0:208  0:012  Loading VBoxHfs.efi status=Success
+0:221  0:012   - driver needs connecting
+0:225  0:003  Loading PartitionDxe.efi status=Success
+0:237  0:012   - driver needs connecting
+0:241  0:003  Loading ApfsDriverLoader.efi status=Success
+0:254  0:012   - driver needs connecting
+0:258  0:004  4 drivers needs connecting ...
+0:258  0:000  PlatformDriverOverrideProtocol not found. Installing ... Success
+0:258  0:000  Partition driver loaded: 
+0:259  0:000  HFS+ driver loaded
+0:259  0:000  APFS driver loaded
+0:259  0:000  Searching for invalid DiskIo BY_DRIVER connects: not found, all ok
+0:462  0:203  === [ InitScreen ] ==============================
+0:467  0:004  Console modes reported: 4, available modes:
+0:470  0:003   - [01]: 80x25 (current mode)
+0:474  0:004   - [03]: 100x31
+0:478  0:003   - [04]: 170x40
+0:483  0:004  SetScreenResolution: 1920x1080 - not found!
+0:490  0:007  SetMaxResolution: found best mode 0: 1366x768
+0:498  0:007   - already set
+0:503  0:004  Using embedded font
+0:508  0:004  === [ ScanSPD ] =================================
+0:512  0:003  SMBus device : 8086 A323 class=0C0500 status=Success
+0:519  0:007  SMBus CmdReg: 0x3
+0:523  0:003  Scanning SMBus [8086:A323], mmio: 0x12116004, ioport: 0xEFA0, hostc: 0x11
+0:527  0:003  Slots to scan [8]...
+0:531  0:004  SPD[0]: Got invalid type 0 @0x50. Will set page and retry.
+0:536  0:004  SPD[0]: Type 12 @0x50
+0:557  0:021  XMP Profile1: 4*125 -31 ns
+0:561  0:003  Found module with XMP version 2.0
+0:565  0:003  Using XMP Profile1 instead of standard frequency 2132MHz
+0:569  0:003  DDR speed 4264MHz
+0:573  0:004  Slot: 0 Type 26 8192MB 4264MHz Vendor=Corsair PartNo=CMK16GX4M2K4266C19 SerialNo=00000000
+0:578  0:004  SPD[1]: Type 12 @0x51
+0:599  0:021  XMP Profile1: 4*125 -31 ns
+0:603  0:003  Found module with XMP version 2.0
+0:607  0:004  Using XMP Profile1 instead of standard frequency 2132MHz
+0:611  0:004  DDR speed 4264MHz
+0:615  0:004  Slot: 1 Type 26 8192MB 4264MHz Vendor=Corsair PartNo=CMK16GX4M2K4266C19 SerialNo=00000000
+0:620  0:005  === [ GetAcpiTablesList ] =======================
+0:624  0:003  Get Acpi Tables List from RSDT: count=24
+0:633  0:008   - [00]: FACP  A M I  len=132
+0:637  0:004   - [01]: APIC  A M I  len=188
+0:641  0:004   - [02]: FPDT  A M I  len=68
+0:645  0:004   - [03]: FIDT  A M I len=156
+0:649  0:003   - [04]: MCFG  A M I  len=60
+0:653  0:004   - [05]: WSMT  A M I  len=40
+0:657  0:003   - [06]: SSDT  SataTabl len=888
+0:661  0:003   - [07]: SSDT  CpuSsdt len=6101
+0:665  0:003   - [08]: SSDT  SaSsdt  len=12443
+0:669  0:003   - [09]: SSDT  PegSsdt len=9048
+0:673  0:003   - [10]: HPET  A M I  len=56
+0:677  0:003   - [11]: SSDT  Ther_Rvp len=3998
+0:680  0:003   - [12]: SSDT  xh_cfsd4 len=10579
+0:684  0:004   - [13]: UEFI  A M I  len=72
+0:688  0:003   - [14]: LPIT  A M I  len=92
+0:692  0:003   - [15]: SSDT  PtidDevc len=10206
+0:696  0:004   - [16]: SSDT  TbtTypeC len=4094
+0:700  0:003   - [17]: DBGP  A M I  len=52
+0:704  0:003   - [18]: DBG2  A M I  len=84
+0:708  0:003   - [19]: SSDT  UsbCTabl len=6449
+0:712  0:003   - [20]: SSDT  ADebTabl len=324
+0:716  0:003   - [21]: VFCT  A M I  len=59524
+0:720  0:003   - [22]: BGRT  A M I  len=56
+0:724  0:003   - [23]: WPBT  A M I len=60
+0:728  0:004   - [00]: Drop table : MATS,                0 :  no
+0:736  0:007  Custom boot CUSTOM_BOOT_DISABLED (0x0)
+0:740  0:004  Default theme: embedded
+0:745  0:004  Set FakeCPUID: 0x0
+0:749  0:004  === [ Found DSDT tables ] =======================
+0:755  0:005  === [ InitKextList ] ============================
+0:760  0:005  Added Kext=Other\USBMapDummy.kext (1.0)
+0:764  0:004  Added Kext=Other\RadeonMonitor.kext (1.3.5)
+0:769  0:004  Added Kext=Other\FakeSMC.kext (3.5.6)
+0:774  0:004  Added Kext=Other\IntelCPUMonitor.kext (1.2.6)
+0:780  0:006  === [ ScanVolumes ] =============================
+0:784  0:004  Found 10 volumes with blockIO
+0:789  0:004  - [00]: Volume: PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x0,0xFFFF,0x0)
+0:797  0:008  - [01]: Volume: PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x0,0xFFFF,0x0)\HD(1,GPT,38DCC513-D608-408E-9D2F-1469C8B906A0,0x28,0x64000)
+0:806  0:008          Result of bootcode detection: bootable unknown (legacy)
+0:831  0:024            label : EFI
+0:835  0:004  - [02]: Volume: PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x0,0xFFFF,0x0)\HD(2,GPT,C20AA839-E88E-4CED-8CAB-9480B290394C,0x64028,0x15D466360)
+0:860  0:024            label : Dati
+0:864  0:003  - [03]: Volume: PciRoot(0x0)\Pci(0x1D,0x0)\Pci(0x0,0x0)\NVMe(0x1,CA-8F-B2-81-58-38-25-00)
+0:871  0:007  - [04]: Volume: PciRoot(0x0)\Pci(0x1D,0x0)\Pci(0x0,0x0)\NVMe(0x1,CA-8F-B2-81-58-38-25-00)\HD(1,GPT,6E40A227-DDED-4325-B7CE-3959620EB39E,0x28,0x64000)
+0:879  0:007          Result of bootcode detection: bootable unknown (legacy)
+0:883  0:004            label : EFI
+0:887  0:004          This is SelfVolume !!
+0:892  0:004  - [05]: Volume: PciRoot(0x0)\Pci(0x1D,0x0)\Pci(0x0,0x0)\NVMe(0x1,CA-8F-B2-81-58-38-25-00)\HD(2,GPT,9508A8C6-F9B9-4EDD-ABC7-C1C4A019C410,0x64028,0x3A321FE0)
+0:900  0:008          Result of bootcode detection: bootable unknown (legacy)
+0:904  0:003  - [06]: Volume: PciRoot(0x0)\Pci(0x1D,0x0)\Pci(0x0,0x0)\NVMe(0x1,CA-8F-B2-81-58-38-25-00)\HD(2,GPT,9508A8C6-F9B9-4EDD-ABC7-C1C4A019C410,0x64028,0x3A321FE0)\VenMedia(BE74FCF7-0B7C-49F3-9147-01F4042E6842,F2738F7DD5B89341BB89C99D72294438)
+0:912  0:008            apfsFileSystemUUID=7D8F73F2-B8D5-4193-BB89-C99D72294438, ApfsContainerUUID=85F3C012-2D6D-4FA1-A77E-71D7470E7FA2, ApfsRole=0x10
+0:916  0:004            label : Preboot
+0:920  0:003  - [07]: Volume: PciRoot(0x0)\Pci(0x1D,0x0)\Pci(0x0,0x0)\NVMe(0x1,CA-8F-B2-81-58-38-25-00)\HD(2,GPT,9508A8C6-F9B9-4EDD-ABC7-C1C4A019C410,0x64028,0x3A321FE0)\VenMedia(BE74FCF7-0B7C-49F3-9147-01F4042E6842,5D6490A424B7BC4F9AC8F7A23B1C4935)
+0:928  0:007            apfsFileSystemUUID=A490645D-B724-4FBC-9AC8-F7A23B1C4935, ApfsContainerUUID=85F3C012-2D6D-4FA1-A77E-71D7470E7FA2, ApfsRole=0x0
+0:944  0:016            label : Macintosh HD
+0:948  0:003  - [08]: Volume: PciRoot(0x0)\Pci(0x1D,0x0)\Pci(0x0,0x0)\NVMe(0x1,CA-8F-B2-81-58-38-25-00)\HD(2,GPT,9508A8C6-F9B9-4EDD-ABC7-C1C4A019C410,0x64028,0x3A321FE0)\VenMedia(BE74FCF7-0B7C-49F3-9147-01F4042E6842,B6D67091A529BA4BA6736F0E24A99093)
+0:957  0:008            apfsFileSystemUUID=9170D6B6-29A5-4BBA-A673-6F0E24A99093, ApfsContainerUUID=85F3C012-2D6D-4FA1-A77E-71D7470E7FA2, ApfsRole=0x4
+0:961  0:004            label : Recovery
+0:965  0:004  - [09]: Volume: PciRoot(0x0)\Pci(0x1D,0x0)\Pci(0x0,0x0)\NVMe(0x1,CA-8F-B2-81-58-38-25-00)\HD(2,GPT,9508A8C6-F9B9-4EDD-ABC7-C1C4A019C410,0x64028,0x3A321FE0)\VenMedia(BE74FCF7-0B7C-49F3-9147-01F4042E6842,55B78B2757452849A2D432E0BB550617)
+0:973  0:007            apfsFileSystemUUID=278BB755-4557-4928-A2D4-32E0BB550617, ApfsContainerUUID=85F3C012-2D6D-4FA1-A77E-71D7470E7FA2, ApfsRole=0x8
+0:977  0:004            label : VM
+0:981  0:003  No AudioIoProtocols, status=Not Found
+0:985  0:004  === [ InitXTheme ] ==============================
+0:989  0:004  use Daylight theme
+0:993  0:003   using embedded theme
+1:006  0:013  Using embedded font
+1:010  0:004  theme inited
+1:014  0:003  Chosen embedded theme
+1:018  0:004  after NVRAM boot-args=dart=0 -v
+1:022  0:004  Scanning legacy ...
+1:026  0:004  === [ Dump SMC keys from NVRAM ] ================
+1:030  0:003  found AppleSMC protocol
+1:042  0:011     fakesmc-key-RVBF-ch8*:02 46 0F 00 00 12 
+1:076  0:033     fakesmc-key-#KEY-ui32:00 00 00 11 
+1:101  0:024     fakesmc-key-$Adr-ui32:00 00 03 00 
+1:126  0:025     fakesmc-key-$Num-ui8:01 
+1:139  0:012     fakesmc-key-RMde-char:41 
+1:152  0:013     fakesmc-key-RBr -ch8*:6A 31 33 38 5F 39 00 00 
+1:193  0:040     fakesmc-key-EPCI-ui32:09 D0 F0 00 
+1:217  0:024     fakesmc-key-REV -ch8*:02 46 0F 00 00 12 
+1:250  0:032     fakesmc-key-RPlt-ch8*:6A 31 33 38 00 00 00 00 
+1:291  0:040     fakesmc-key-BEMB-flag:00 
+1:304  0:013     fakesmc-key-BATP-flag:00 
+1:320  0:016     fakesmc-key-BNum-ui8:00 
+1:336  0:016     fakesmc-key-MSTc-ui8:00 
+1:356  0:019     fakesmc-key-MSAc-ui16:00 00 
+1:373  0:016     fakesmc-key-MSWr-ui8:00 
+1:386  0:013     fakesmc-key-MSFW-ui8:01 00 
+1:404  0:017     fakesmc-key-MSPS-ui16:00 03 
+1:425  0:021  Registered 17 SMC keys
+1:434  0:008  === [ ScanLoader ] ==============================
+1:438  0:004  - [01]: 'EFI'
+1:464  0:025  - [02]: 'Dati'
+1:501  0:037  - [04]: 'EFI'
+1:512  0:011        AddLoaderEntry for Volume Name=EFI, idx=0
+1:516  0:004        OSVersion= 
+1:520  0:004        IconName=unknown comma=-1 size=7
+1:524  0:004        Full=unknown
+1:528  0:004        Loader entry created for 'PciRoot(0x0)\Pci(0x1D,0x0)\Pci(0x0,0x0)\NVMe(0x1,CA-8F-B2-81-58-38-25-00)\HD(1,GPT,6E40A227-DDED-4325-B7CE-3959620EB39E,0x28,0x64000)\EFI\BOOT\BOOTX64.efi'
+1:533  0:004       hiding entry: \EFI\BOOT\BOOTX64.efi
+1:537  0:004        Menu entry added at index 0
+1:541  0:003       hiding entry because DiskKind is DISK_KIND_INTERNAL: \EFI\BOOT\BOOTX64.efi
+1:544  0:003  - [06]: 'Preboot'
+1:552  0:007      ApfsContainerUUID=85F3C012-2D6D-4FA1-A77E-71D7470E7FA2
+1:556  0:003      ApfsFileSystemUUID=7D8F73F2-B8D5-4193-BB89-C99D72294438
+1:560  0:004      APFSTargetUUID=A490645D-B724-4FBC-9AC8-F7A23B1C4935
+1:564  0:004        AddLoaderEntry for Volume Name=Preboot, idx=1
+1:569  0:004        OSVersion=10.14.6 
+1:573  0:004        Check if volume Is Hibernated:
+1:577  0:004        Check sleep image 'by signature':
+1:581  0:003        using default sleep image name = \private\var\vm\sleepimage
+1:585  0:004        cannot open sleepimage -> Not Found
+1:589  0:003        hibernated: no - sign
+1:593  0:003        IconName=moja,mac comma=4 size=8
+1:599  0:006        first=os_moja
+1:603  0:003        Second=os_mac
+1:607  0:003        IconName=unknown comma=-1 size=7
+1:611  0:003        Full=unknown
+1:615  0:003        Loader entry created for 'PciRoot(0x0)\Pci(0x1D,0x0)\Pci(0x0,0x0)\NVMe(0x1,CA-8F-B2-81-58-38-25-00)\HD(2,GPT,9508A8C6-F9B9-4EDD-ABC7-C1C4A019C410,0x64028,0x3A321FE0)\VenMedia(BE74FCF7-0B7C-49F3-9147-01F4042E6842,F2738F7DD5B89341BB89C99D72294438)\A490645D-B724-4FBC-9AC8-F7A23B1C4935\System\Library\CoreServices\boot.efi'
+1:620  0:005        Menu entry added at index 1
+1:625  0:004      Dead installer entry found (installer dmg boot file not found : '\macOS Install Data\BaseSystem.dmg')
+1:628  0:003  - [07]: 'Macintosh HD'
+1:636  0:008      ApfsContainerUUID=85F3C012-2D6D-4FA1-A77E-71D7470E7FA2
+1:640  0:003      ApfsFileSystemUUID=A490645D-B724-4FBC-9AC8-F7A23B1C4935
+1:647  0:006        AddLoaderEntry for Volume Name=Macintosh HD, idx=2
+1:652  0:005        OSVersion=10.14.6 
+1:656  0:004        Check if volume Is Hibernated:
+1:660  0:003        Check sleep image 'by signature':
+1:665  0:005        read prefs \Library\Preferences\com.apple.PowerManagement.plist status=Success
+1:669  0:003        using default sleep image name = \private\var\vm\sleepimage
+1:674  0:004        cannot open sleepimage -> Not Found
+1:678  0:004        hibernated: no - sign
+1:682  0:004        IconName=moja,mac comma=4 size=8
+1:686  0:003        first=os_moja
+1:690  0:003        Second=os_mac
+1:694  0:003        IconName=unknown comma=-1 size=7
+1:698  0:003        Full=unknown
+1:702  0:004        Loader entry created for 'PciRoot(0x0)\Pci(0x1D,0x0)\Pci(0x0,0x0)\NVMe(0x1,CA-8F-B2-81-58-38-25-00)\HD(2,GPT,9508A8C6-F9B9-4EDD-ABC7-C1C4A019C410,0x64028,0x3A321FE0)\VenMedia(BE74FCF7-0B7C-49F3-9147-01F4042E6842,5D6490A424B7BC4F9AC8F7A23B1C4935)\System\Library\CoreServices\boot.efi'
+1:707  0:005        Menu entry added at index 2
+1:711  0:004  - [08]: 'Recovery'
+1:719  0:007      ApfsContainerUUID=85F3C012-2D6D-4FA1-A77E-71D7470E7FA2
+1:723  0:004      ApfsFileSystemUUID=9170D6B6-29A5-4BBA-A673-6F0E24A99093
+1:727  0:004      APFSTargetUUID=A490645D-B724-4FBC-9AC8-F7A23B1C4935
+1:731  0:004        AddLoaderEntry for Volume Name=Recovery, idx=3
+1:735  0:004        OSVersion=10.14.6 
+1:742  0:006        IconName=moja,mac comma=4 size=8
+1:746  0:003        first=os_moja
+1:751  0:005        Second=os_mac
+1:755  0:003        IconName=unknown comma=-1 size=7
+1:759  0:003        Full=unknown
+1:763  0:003        Loader entry created for 'PciRoot(0x0)\Pci(0x1D,0x0)\Pci(0x0,0x0)\NVMe(0x1,CA-8F-B2-81-58-38-25-00)\HD(2,GPT,9508A8C6-F9B9-4EDD-ABC7-C1C4A019C410,0x64028,0x3A321FE0)\VenMedia(BE74FCF7-0B7C-49F3-9147-01F4042E6842,B6D67091A529BA4BA6736F0E24A99093)\A490645D-B724-4FBC-9AC8-F7A23B1C4935\boot.efi'
+1:767  0:004        Menu entry added at index 3
+1:771  0:004  - [09]: 'VM'
+1:780  0:008      ApfsContainerUUID=85F3C012-2D6D-4FA1-A77E-71D7470E7FA2
+1:784  0:003      ApfsFileSystemUUID=278BB755-4557-4928-A2D4-32E0BB550617
+1:788  0:004  Entries list before ordering
+1:792  0:003      Entry 0 : Boot UEFI internal from EFI (hidden)
+1:796  0:004      Entry 1 : Boot Mac OS from Macintosh HD via Preboot
+1:800  0:003      Entry 2 : Boot macOS from Macintosh HD
+1:804  0:003      Entry 3 : Boot Mac OS Recovery for Macintosh HD via Recovery
+1:808  0:003  Hiding entry 1 because of entry 2
+1:812  0:004  Entries list after ordering
+1:816  0:004    Entry 0 : Boot UEFI internal from EFI (hidden)
+1:820  0:004    Entry 1 : Boot Mac OS from Macintosh HD via Preboot (hidden)
+1:824  0:003    Entry 2 : Boot macOS from Macintosh HD
+1:828  0:004    Entry 3 : Boot Mac OS Recovery for Macintosh HD via Recovery
+1:832  0:003  === [ AddCustomTool ] ===========================
+1:836  0:004  found tool \EFI\CLOVER\tools\Shell64U.efi
+1:840  0:003  Checking EFI partition Volume 1 for Clover
+1:845  0:005   Found Clover
+1:850  0:004  === [ GetEfiBootDeviceFromNvram ] ===============
+1:854  0:004   - [!] efi-boot-device-data not found
+1:858  0:004   - found entry 0. 'Boot macOS from Macintosh HD', Volume 'Macintosh HD', DevicePath 'PciRoot(0x0)\Pci(0x1D,0x0)\Pci(0x0,0x0)\NVMe(0x1,CA-8F-B2-81-58-38-25-00)\HD(2,GPT,9508A8C6-F9B9-4EDD-ABC7-C1C4A019C410,0x64028,0x3A321FE0)\VenMedia(BE74FCF7-0B7C-49F3-9147-01F4042E6842,5D6490A424B7BC4F9AC8F7A23B1C4935)\System\Library\CoreServices\boot.efi'
+1:862  0:004  BannerPlace at Clear Screen [619,68]
+1:882  0:020  GUI ready
+4:040  2:157  Found BIOS RSDP at f0010
+4:044  0:003  Printing ACPI tables from RSDP f0010 ...
+4:048  0:003   f0010: 'RSD PTR ', Rev: 2 (Acpi 2.0 or newer), Len: 36
+4:063  0:015    (Xsdt: 7a27d0b8, Rsdt: 7a27d028)
+4:067  0:003    7a27d0b8: 'XSDT', 'A M I', Rev: 1, Len: 228
+4:079  0:011    7a27d028: 'RSDT', 'A M I', Rev: 1, Len: 132
+4:090  0:011    Tables in Xsdt: 24
+4:094  0:003    0. 7a2c2fa8: 'FACP', 'A M I', Rev: 6, Len: 276
+4:106  0:011        (Dsdt: 7A27D230, Facs: 7A3D2080, XDsdt: 7a27d230, XFacs: 0)
+4:118  0:012        7a27d230: 'DSDT', 'A M I', Rev: 2, Len: 286069
+4:133  0:015        7a3d2080: 'FACS', Ver: 2, Len: 64
+4:141  0:007    1. 7a2c30c0: 'APIC', 'A M I', Rev: 4, Len: 188
+4:153  0:011    2. 7a2c3180: 'FPDT', 'A M I', Rev: 1, Len: 68
+4:164  0:011    3. 7a2c31c8: 'FIDT', 'A M I', Rev: 1, Len: 156
+4:176  0:011    4. 7a2c3268: 'MCFG', 'A M I', Rev: 1, Len: 60
+4:188  0:011    5. 7a2e1810: 'WSMT', 'A M I', Rev: 1, Len: 40
+4:199  0:011    6. 7a2c3300: 'SSDT', 'SataTabl', Rev: 1, Len: 888
+4:211  0:011    7. 7a2c3678: 'SSDT', 'CpuSsdt', Rev: 2, Len: 6101
+4:223  0:011    8. 7a2c4e50: 'SSDT', 'SaSsdt', Rev: 2, Len: 12443
+4:234  0:011    9. 7a2c7ef0: 'SSDT', 'PegSsdt', Rev: 2, Len: 9048
+4:246  0:011    10. 7a2ca248: 'HPET', 'A M I', Rev: 1, Len: 56
+4:258  0:011    11. 7a2ca280: 'SSDT', 'Ther_Rvp', Rev: 2, Len: 3998
+4:270  0:012    12. 7a2cb220: 'SSDT', 'xh_cfsd4', Rev: 2, Len: 10579
+4:282  0:011    13. 7a2cdb78: 'UEFI', 'A M I', Rev: 1, Len: 72
+4:294  0:012    14. 7a2cdbc0: 'LPIT', 'A M I', Rev: 1, Len: 92
+4:315  0:021    15. 7a2cdc20: 'SSDT', 'PtidDevc', Rev: 2, Len: 10206
+4:327  0:011    16. 7a2d0400: 'SSDT', 'TbtTypeC', Rev: 2, Len: 4094
+4:339  0:012    17. 7a2d1400: 'DBGP', 'A M I', Rev: 1, Len: 52
+4:351  0:012    18. 7a2d1438: 'DBG2', 'A M I', Rev: 0, Len: 84
+4:363  0:011    19. 7a2d1490: 'SSDT', 'UsbCTabl', Rev: 2, Len: 6449
+4:375  0:011    20. 7a2d2dc8: 'SSDT', 'ADebTabl', Rev: 2, Len: 324
+4:387  0:012    21. 7a2d2f10: 'VFCT', 'A M I', Rev: 1, Len: 59524
+4:399  0:012    22. 7a2e1798: 'BGRT', 'A M I', Rev: 1, Len: 56
+4:411  0:011    23. 7a2e17d0: 'WPBT', 'A M I', Rev: 1, Len: 60
+4:423  0:011  Found UEFI Acpi 2.0 RSDP at 7a27d000
+4:427  0:003  Saving ACPI tables from RSDP 7a27d000 to ACPI\origin ...
+4:431  0:003   7a27d000: 'RSD PTR ', Rev: 2 (Acpi 2.0 or newer), Len: 36 -> RSDP.aml
+4:458  0:027    (Xsdt: 7a27d0b8, Rsdt: 7a27d028)
+4:462  0:003    7a27d0b8: 'XSDT', 'A M I', Rev: 1, Len: 228 -> XSDT.aml
+4:486  0:023    7a27d028: 'RSDT', 'A M I', Rev: 1, Len: 132 -> RSDT.aml
+4:510  0:024    Tables in Xsdt: 24
+4:514  0:004    0. 7a2c2fa8: 'FACP', 'A M I', Rev: 6, Len: 276 -> FACP.aml
+4:538  0:023        (Dsdt: 7A27D230, Facs: 7A3D2080, XDsdt: 7a27d230, XFacs: 0)
+4:550  0:012        7a27d230: 'DSDT', 'A M I', Rev: 2, Len: 286069 -> DSDT.aml
+4:578  0:027        7a3d2080: 'FACS', Ver: 2, Len: 64 -> FACS.aml
+4:603  0:024    1. 7a2c30c0: 'APIC', 'A M I', Rev: 4, Len: 188 -> APIC.aml
+4:629  0:025    2. 7a2c3180: 'FPDT', 'A M I', Rev: 1, Len: 68 -> FPDT.aml
+4:654  0:024    3. 7a2c31c8: 'FIDT', 'A M I', Rev: 1, Len: 156 -> FIDT.aml
+4:678  0:024    4. 7a2c3268: 'MCFG', 'A M I', Rev: 1, Len: 60 -> MCFG.aml
+4:701  0:023    5. 7a2e1810: 'WSMT', 'A M I', Rev: 1, Len: 40 -> WSMT.aml
+4:726  0:024    6. 7a2c3300: 'SSDT', 'SataTabl', Rev: 1, Len: 888 -> SSDT-0-SataTabl.aml
+4:750  0:024    7. 7a2c3678: 'SSDT', 'CpuSsdt', Rev: 2, Len: 6101 -> SSDT-1-CpuSsdt.aml (Found hidden SSDT 7 pcs)
+4:775  0:024        * 2046705688: 'SSDT', 'Cpu0Ist', Rev: 2, Len: 1932  53 53 44 54 8C 07 00 00 02 66 50 6D 52 65 66 00 Internal length = 1932 -> SSDT-x1_0-Cpu0Ist.aml
+4:865  0:090        * 2046697496: 'SSDT', 'ApIst', Rev: 2, Len: 3825  53 53 44 54 F1 0E 00 00 02 ED 50 6D 52 65 66 00 Internal length = 3825 -> SSDT-x1_1-ApIst.aml
+4:955  0:090        * 2046719000: 'SSDT', 'Cpu0Cst', Rev: 2, Len: 1024  53 53 44 54 00 04 00 00 02 D9 50 6D 52 65 66 00 Internal length = 1024 -> SSDT-x1_2-Cpu0Cst.aml
+5:048  0:092        * 2046704280: 'SSDT', 'ApCst', Rev: 2, Len: 778  53 53 44 54 0A 03 00 00 02 E9 50 6D 52 65 66 00 Internal length = 778 -> SSDT-x1_3-ApCst.aml
+5:137  0:088        * 2046709400: 'SSDT', 'Cpu0Hwp', Rev: 2, Len: 307  53 53 44 54 33 01 00 00 02 23 50 6D 52 65 66 00 Internal length = 307 -> SSDT-x1_4-Cpu0Hwp.aml
+5:226  0:088        * 2046708376: 'SSDT', 'ApHwp', Rev: 2, Len: 791  53 53 44 54 17 03 00 00 02 E3 50 6D 52 65 66 00 Internal length = 791 -> SSDT-x1_5-ApHwp.aml
+5:315  0:089        * 2046701592: 'SSDT', 'HwpLvt', Rev: 2, Len: 1828  53 53 44 54 24 07 00 00 02 CA 50 6D 52 65 66 00 Internal length = 1828 -> SSDT-x1_6-HwpLvt.aml
+5:407  0:091  
+5:411  0:003    8. 7a2c4e50: 'SSDT', 'SaSsdt', Rev: 2, Len: 12443 -> SSDT-2-SaSsdt.aml
+5:436  0:024    9. 7a2c7ef0: 'SSDT', 'PegSsdt', Rev: 2, Len: 9048 -> SSDT-3-PegSsdt.aml
+5:460  0:024    10. 7a2ca248: 'HPET', 'A M I', Rev: 1, Len: 56 -> HPET.aml
+5:484  0:023    11. 7a2ca280: 'SSDT', 'Ther_Rvp', Rev: 2, Len: 3998 -> SSDT-4-Ther_Rvp.aml
+5:508  0:023    12. 7a2cb220: 'SSDT', 'xh_cfsd4', Rev: 2, Len: 10579 -> SSDT-5-xh_cfsd4.aml
+5:532  0:024    13. 7a2cdb78: 'UEFI', 'A M I', Rev: 1, Len: 72 -> UEFI.aml
+5:556  0:023    14. 7a2cdbc0: 'LPIT', 'A M I', Rev: 1, Len: 92 -> LPIT.aml
+5:581  0:024    15. 7a2cdc20: 'SSDT', 'PtidDevc', Rev: 2, Len: 10206 -> SSDT-6-PtidDevc.aml
+5:604  0:023    16. 7a2d0400: 'SSDT', 'TbtTypeC', Rev: 2, Len: 4094 -> SSDT-7-TbtTypeC.aml
+5:634  0:029    17. 7a2d1400: 'DBGP', 'A M I', Rev: 1, Len: 52 -> DBGP.aml
+5:658  0:024    18. 7a2d1438: 'DBG2', 'A M I', Rev: 0, Len: 84 -> DBG2.aml
+5:682  0:024    19. 7a2d1490: 'SSDT', 'UsbCTabl', Rev: 2, Len: 6449 -> SSDT-8-UsbCTabl.aml
+5:707  0:024    20. 7a2d2dc8: 'SSDT', 'ADebTabl', Rev: 2, Len: 324 -> SSDT-9-ADebTabl.aml
+5:737  0:030    21. 7a2d2f10: 'VFCT', 'A M I', Rev: 1, Len: 59524 -> VFCT.aml
+5:763  0:025    22. 7a2e1798: 'BGRT', 'A M I', Rev: 1, Len: 56 -> BGRT.aml
+5:787  0:024    23. 7a2e17d0: 'WPBT', 'A M I', Rev: 1, Len: 60 -> WPBT.aml
+5:812  0:024  Found UEFI Acpi 1.0 RSDP at 7a27d000
+5:815  0:003  Printing ACPI tables from RSDP 7a27d000 ...
+5:820  0:004   7a27d000: 'RSD PTR ', Rev: 2 (Acpi 2.0 or newer), Len: 36
+5:835  0:015    (Xsdt: 7a27d0b8, Rsdt: 7a27d028)
+5:839  0:003    7a27d0b8: 'XSDT', 'A M I', Rev: 1, Len: 228
+5:851  0:011    7a27d028: 'RSDT', 'A M I', Rev: 1, Len: 132
+5:863  0:011    Tables in Xsdt: 24
+5:867  0:003    0. 7a2c2fa8: 'FACP', 'A M I', Rev: 6, Len: 276
+5:881  0:014        (Dsdt: 7A27D230, Facs: 7A3D2080, XDsdt: 7a27d230, XFacs: 0)
+5:894  0:012        7a27d230: 'DSDT', 'A M I', Rev: 2, Len: 286069
+5:909  0:015        7a3d2080: 'FACS', Ver: 2, Len: 64
+5:917  0:008    1. 7a2c30c0: 'APIC', 'A M I', Rev: 4, Len: 188
+5:930  0:012    2. 7a2c3180: 'FPDT', 'A M I', Rev: 1, Len: 68
+5:945  0:015    3. 7a2c31c8: 'FIDT', 'A M I', Rev: 1, Len: 156
+5:957  0:011    4. 7a2c3268: 'MCFG', 'A M I', Rev: 1, Len: 60
+5:970  0:012    5. 7a2e1810: 'WSMT', 'A M I', Rev: 1, Len: 40
+5:982  0:012    6. 7a2c3300: 'SSDT', 'SataTabl', Rev: 1, Len: 888
+5:994  0:012    7. 7a2c3678: 'SSDT', 'CpuSsdt', Rev: 2, Len: 6101
+6:006  0:012    8. 7a2c4e50: 'SSDT', 'SaSsdt', Rev: 2, Len: 12443
+6:019  0:012    9. 7a2c7ef0: 'SSDT', 'PegSsdt', Rev: 2, Len: 9048
+6:031  0:012    10. 7a2ca248: 'HPET', 'A M I', Rev: 1, Len: 56
+6:043  0:012    11. 7a2ca280: 'SSDT', 'Ther_Rvp', Rev: 2, Len: 3998
+6:055  0:011    12. 7a2cb220: 'SSDT', 'xh_cfsd4', Rev: 2, Len: 10579
+6:067  0:012    13. 7a2cdb78: 'UEFI', 'A M I', Rev: 1, Len: 72
+6:079  0:011    14. 7a2cdbc0: 'LPIT', 'A M I', Rev: 1, Len: 92
+6:090  0:011    15. 7a2cdc20: 'SSDT', 'PtidDevc', Rev: 2, Len: 10206
+6:103  0:012    16. 7a2d0400: 'SSDT', 'TbtTypeC', Rev: 2, Len: 4094
+6:115  0:012    17. 7a2d1400: 'DBGP', 'A M I', Rev: 1, Len: 52
+6:127  0:012    18. 7a2d1438: 'DBG2', 'A M I', Rev: 0, Len: 84
+6:140  0:012    19. 7a2d1490: 'SSDT', 'UsbCTabl', Rev: 2, Len: 6449
+6:152  0:012    20. 7a2d2dc8: 'SSDT', 'ADebTabl', Rev: 2, Len: 324
+6:164  0:012    21. 7a2d2f10: 'VFCT', 'A M I', Rev: 1, Len: 59524
+6:176  0:012    22. 7a2e1798: 'BGRT', 'A M I', Rev: 1, Len: 56
+6:188  0:012    23. 7a2e17d0: 'WPBT', 'A M I', Rev: 1, Len: 60
+35:554  29:366  Found BIOS RSDP at f0010
+35:558  0:003  Printing ACPI tables from RSDP f0010 ...
+35:562  0:004   f0010: 'RSD PTR ', Rev: 2 (Acpi 2.0 or newer), Len: 36
+35:578  0:015    (Xsdt: 7a27d0b8, Rsdt: 7a27d028)
+35:582  0:003    7a27d0b8: 'XSDT', 'A M I', Rev: 1, Len: 228
+35:594  0:011    7a27d028: 'RSDT', 'A M I', Rev: 1, Len: 132
+35:606  0:011    Tables in Xsdt: 24
+35:610  0:003    0. 7a2c2fa8: 'FACP', 'A M I', Rev: 6, Len: 276
+35:622  0:011        (Dsdt: 7A27D230, Facs: 7A3D2080, XDsdt: 7a27d230, XFacs: 0)
+35:634  0:012        7a27d230: 'DSDT', 'A M I', Rev: 2, Len: 286069
+35:649  0:014        7a3d2080: 'FACS', Ver: 2, Len: 64
+35:657  0:008    1. 7a2c30c0: 'APIC', 'A M I', Rev: 4, Len: 188
+35:668  0:011    2. 7a2c3180: 'FPDT', 'A M I', Rev: 1, Len: 68
+35:680  0:012    3. 7a2c31c8: 'FIDT', 'A M I', Rev: 1, Len: 156
+35:692  0:012    4. 7a2c3268: 'MCFG', 'A M I', Rev: 1, Len: 60
+35:704  0:011    5. 7a2e1810: 'WSMT', 'A M I', Rev: 1, Len: 40
+35:717  0:012    6. 7a2c3300: 'SSDT', 'SataTabl', Rev: 1, Len: 888
+35:729  0:012    7. 7a2c3678: 'SSDT', 'CpuSsdt', Rev: 2, Len: 6101
+35:741  0:011    8. 7a2c4e50: 'SSDT', 'SaSsdt', Rev: 2, Len: 12443
+35:754  0:013    9. 7a2c7ef0: 'SSDT', 'PegSsdt', Rev: 2, Len: 9048
+35:766  0:012    10. 7a2ca248: 'HPET', 'A M I', Rev: 1, Len: 56
+35:778  0:011    11. 7a2ca280: 'SSDT', 'Ther_Rvp', Rev: 2, Len: 3998
+35:796  0:017    12. 7a2cb220: 'SSDT', 'xh_cfsd4', Rev: 2, Len: 10579
+35:808  0:012    13. 7a2cdb78: 'UEFI', 'A M I', Rev: 1, Len: 72
+35:821  0:012    14. 7a2cdbc0: 'LPIT', 'A M I', Rev: 1, Len: 92
+35:833  0:012    15. 7a2cdc20: 'SSDT', 'PtidDevc', Rev: 2, Len: 10206
+35:845  0:012    16. 7a2d0400: 'SSDT', 'TbtTypeC', Rev: 2, Len: 4094
+35:857  0:012    17. 7a2d1400: 'DBGP', 'A M I', Rev: 1, Len: 52
+35:869  0:011    18. 7a2d1438: 'DBG2', 'A M I', Rev: 0, Len: 84
+35:881  0:011    19. 7a2d1490: 'SSDT', 'UsbCTabl', Rev: 2, Len: 6449
+35:893  0:011    20. 7a2d2dc8: 'SSDT', 'ADebTabl', Rev: 2, Len: 324
+35:905  0:012    21. 7a2d2f10: 'VFCT', 'A M I', Rev: 1, Len: 59524
+35:917  0:011    22. 7a2e1798: 'BGRT', 'A M I', Rev: 1, Len: 56
+35:928  0:011    23. 7a2e17d0: 'WPBT', 'A M I', Rev: 1, Len: 60
+35:940  0:011  Found UEFI Acpi 2.0 RSDP at 7a27d000
+35:944  0:003  Saving ACPI tables from RSDP 7a27d000 to ACPI\origin ...
+35:948  0:003   7a27d000: 'RSD PTR ', Rev: 2 (Acpi 2.0 or newer), Len: 36 -> RSDP.aml
+35:981  0:032    (Xsdt: 7a27d0b8, Rsdt: 7a27d028)
+35:985  0:004    7a27d0b8: 'XSDT', 'A M I', Rev: 1, Len: 228 -> XSDT.aml
+36:019  0:034    7a27d028: 'RSDT', 'A M I', Rev: 1, Len: 132 -> RSDT.aml
+36:048  0:029    Tables in Xsdt: 24
+36:052  0:004    0. 7a2c2fa8: 'FACP', 'A M I', Rev: 6, Len: 276 -> FACP.aml
+36:081  0:028        (Dsdt: 7A27D230, Facs: 7A3D2080, XDsdt: 7a27d230, XFacs: 0)
+36:093  0:011        7a27d230: 'DSDT', 'A M I', Rev: 2, Len: 286069 -> DSDT.aml
+36:125  0:032        7a3d2080: 'FACS', Ver: 2, Len: 64 -> FACS.aml
+36:150  0:024    1. 7a2c30c0: 'APIC', 'A M I', Rev: 4, Len: 188 -> APIC.aml
+36:179  0:028    2. 7a2c3180: 'FPDT', 'A M I', Rev: 1, Len: 68 -> FPDT.aml
+36:207  0:028    3. 7a2c31c8: 'FIDT', 'A M I', Rev: 1, Len: 156 -> FIDT.aml
+36:235  0:027    4. 7a2c3268: 'MCFG', 'A M I', Rev: 1, Len: 60 -> MCFG.aml
+36:264  0:028    5. 7a2e1810: 'WSMT', 'A M I', Rev: 1, Len: 40 -> WSMT.aml
+36:294  0:030    6. 7a2c3300: 'SSDT', 'SataTabl', Rev: 1, Len: 888 -> SSDT-0-SataTabl.aml
+36:322  0:028    7. 7a2c3678: 'SSDT', 'CpuSsdt', Rev: 2, Len: 6101 -> SSDT-1-CpuSsdt.aml (Found hidden SSDT 7 pcs)
+36:350  0:027        * 2046705688: 'SSDT', 'Cpu0Ist', Rev: 2, Len: 1932  53 53 44 54 8C 07 00 00 02 66 50 6D 52 65 66 00 Internal length = 1932 -> SSDT-x1_0-Cpu0Ist.aml
+36:442  0:091        * 2046697496: 'SSDT', 'ApIst', Rev: 2, Len: 3825  53 53 44 54 F1 0E 00 00 02 ED 50 6D 52 65 66 00 Internal length = 3825 -> SSDT-x1_1-ApIst.aml
+36:543  0:101        * 2046719000: 'SSDT', 'Cpu0Cst', Rev: 2, Len: 1024  53 53 44 54 00 04 00 00 02 D9 50 6D 52 65 66 00 Internal length = 1024 -> SSDT-x1_2-Cpu0Cst.aml
+36:636  0:092        * 2046704280: 'SSDT', 'ApCst', Rev: 2, Len: 778  53 53 44 54 0A 03 00 00 02 E9 50 6D 52 65 66 00 Internal length = 778 -> SSDT-x1_3-ApCst.aml
+36:728  0:092        * 2046709400: 'SSDT', 'Cpu0Hwp', Rev: 2, Len: 307  53 53 44 54 33 01 00 00 02 23 50 6D 52 65 66 00 Internal length = 307 -> SSDT-x1_4-Cpu0Hwp.aml
+36:822  0:094        * 2046708376: 'SSDT', 'ApHwp', Rev: 2, Len: 791  53 53 44 54 17 03 00 00 02 E3 50 6D 52 65 66 00 Internal length = 791 -> SSDT-x1_5-ApHwp.aml
+36:914  0:091        * 2046701592: 'SSDT', 'HwpLvt', Rev: 2, Len: 1828  53 53 44 54 24 07 00 00 02 CA 50 6D 52 65 66 00 Internal length = 1828 -> SSDT-x1_6-HwpLvt.aml
+37:012  0:098  
+37:019  0:006    8. 7a2c4e50: 'SSDT', 'SaSsdt', Rev: 2, Len: 12443 -> SSDT-2-SaSsdt.aml
+37:047  0:028    9. 7a2c7ef0: 'SSDT', 'PegSsdt', Rev: 2, Len: 9048 -> SSDT-3-PegSsdt.aml
+37:075  0:027    10. 7a2ca248: 'HPET', 'A M I', Rev: 1, Len: 56 -> HPET.aml
+37:102  0:027    11. 7a2ca280: 'SSDT', 'Ther_Rvp', Rev: 2, Len: 3998 -> SSDT-4-Ther_Rvp.aml
+37:131  0:028    12. 7a2cb220: 'SSDT', 'xh_cfsd4', Rev: 2, Len: 10579 -> SSDT-5-xh_cfsd4.aml
+37:158  0:027    13. 7a2cdb78: 'UEFI', 'A M I', Rev: 1, Len: 72 -> UEFI.aml
+37:189  0:030    14. 7a2cdbc0: 'LPIT', 'A M I', Rev: 1, Len: 92 -> LPIT.aml
+37:220  0:031    15. 7a2cdc20: 'SSDT', 'PtidDevc', Rev: 2, Len: 10206 -> SSDT-6-PtidDevc.aml
+37:249  0:028    16. 7a2d0400: 'SSDT', 'TbtTypeC', Rev: 2, Len: 4094 -> SSDT-7-TbtTypeC.aml
+37:277  0:027    17. 7a2d1400: 'DBGP', 'A M I', Rev: 1, Len: 52 -> DBGP.aml
+37:305  0:028    18. 7a2d1438: 'DBG2', 'A M I', Rev: 0, Len: 84 -> DBG2.aml
+37:338  0:032    19. 7a2d1490: 'SSDT', 'UsbCTabl', Rev: 2, Len: 6449 -> SSDT-8-UsbCTabl.aml
+37:366  0:027    20. 7a2d2dc8: 'SSDT', 'ADebTabl', Rev: 2, Len: 324 -> SSDT-9-ADebTabl.aml
+37:395  0:028    21. 7a2d2f10: 'VFCT', 'A M I', Rev: 1, Len: 59524 -> VFCT.aml
+37:424  0:028    22. 7a2e1798: 'BGRT', 'A M I', Rev: 1, Len: 56 -> BGRT.aml
+37:452  0:028    23. 7a2e17d0: 'WPBT', 'A M I', Rev: 1, Len: 60 -> WPBT.aml
+37:481  0:028  Found UEFI Acpi 1.0 RSDP at 7a27d000
+37:485  0:004  Printing ACPI tables from RSDP 7a27d000 ...
+37:489  0:004   7a27d000: 'RSD PTR ', Rev: 2 (Acpi 2.0 or newer), Len: 36
+37:505  0:015    (Xsdt: 7a27d0b8, Rsdt: 7a27d028)
+37:509  0:003    7a27d0b8: 'XSDT', 'A M I', Rev: 1, Len: 228
+37:521  0:012    7a27d028: 'RSDT', 'A M I', Rev: 1, Len: 132
+37:533  0:012    Tables in Xsdt: 24
+37:537  0:004    0. 7a2c2fa8: 'FACP', 'A M I', Rev: 6, Len: 276
+37:549  0:012        (Dsdt: 7A27D230, Facs: 7A3D2080, XDsdt: 7a27d230, XFacs: 0)
+37:561  0:011        7a27d230: 'DSDT', 'A M I', Rev: 2, Len: 286069
+37:576  0:015        7a3d2080: 'FACS', Ver: 2, Len: 64
+37:584  0:007    1. 7a2c30c0: 'APIC', 'A M I', Rev: 4, Len: 188
+37:596  0:012    2. 7a2c3180: 'FPDT', 'A M I', Rev: 1, Len: 68
+37:608  0:011    3. 7a2c31c8: 'FIDT', 'A M I', Rev: 1, Len: 156
+37:620  0:011    4. 7a2c3268: 'MCFG', 'A M I', Rev: 1, Len: 60
+37:632  0:011    5. 7a2e1810: 'WSMT', 'A M I', Rev: 1, Len: 40
+37:643  0:011    6. 7a2c3300: 'SSDT', 'SataTabl', Rev: 1, Len: 888
+37:655  0:011    7. 7a2c3678: 'SSDT', 'CpuSsdt', Rev: 2, Len: 6101
+37:667  0:011    8. 7a2c4e50: 'SSDT', 'SaSsdt', Rev: 2, Len: 12443
+37:679  0:012    9. 7a2c7ef0: 'SSDT', 'PegSsdt', Rev: 2, Len: 9048
+37:691  0:011    10. 7a2ca248: 'HPET', 'A M I', Rev: 1, Len: 56
+37:703  0:011    11. 7a2ca280: 'SSDT', 'Ther_Rvp', Rev: 2, Len: 3998
+37:715  0:011    12. 7a2cb220: 'SSDT', 'xh_cfsd4', Rev: 2, Len: 10579
+37:727  0:011    13. 7a2cdb78: 'UEFI', 'A M I', Rev: 1, Len: 72
+37:738  0:011    14. 7a2cdbc0: 'LPIT', 'A M I', Rev: 1, Len: 92
+37:751  0:012    15. 7a2cdc20: 'SSDT', 'PtidDevc', Rev: 2, Len: 10206
+37:763  0:011    16. 7a2d0400: 'SSDT', 'TbtTypeC', Rev: 2, Len: 4094
+37:775  0:011    17. 7a2d1400: 'DBGP', 'A M I', Rev: 1, Len: 52
+37:786  0:011    18. 7a2d1438: 'DBG2', 'A M I', Rev: 0, Len: 84
+37:798  0:011    19. 7a2d1490: 'SSDT', 'UsbCTabl', Rev: 2, Len: 6449
+37:810  0:011    20. 7a2d2dc8: 'SSDT', 'ADebTabl', Rev: 2, Len: 324
+37:822  0:011    21. 7a2d2f10: 'VFCT', 'A M I', Rev: 1, Len: 59524
+37:834  0:012    22. 7a2e1798: 'BGRT', 'A M I', Rev: 1, Len: 56
+37:846  0:011    23. 7a2e17d0: 'WPBT', 'A M I', Rev: 1, Len: 60
+38:111  0:264  Boot option 0 has other volume name Macintosh HDboot.efi
+38:115  0:003  === [ StartLoader ] =============================
+38:119  0:003  Starting PciRoot(0x0)\Pci(0x1D,0x0)\Pci(0x0,0x0)\NVMe(0x1,CA-8F-B2-81-58-38-25-00)\HD(2,GPT,9508A8C6-F9B9-4EDD-ABC7-C1C4A019C410,0x64028,0x3A321FE0)\VenMedia(BE74FCF7-0B7C-49F3-9147-01F4042E6842,5D6490A424B7BC4F9AC8F7A23B1C4935)\System\Library\CoreServices\boot.efi
+38:123  0:004  Finally: ExternalClock=26MHz BusSpeed=100014kHz CPUFreq=3600MHz PIS: hw.busfrequency=104000000Hz
