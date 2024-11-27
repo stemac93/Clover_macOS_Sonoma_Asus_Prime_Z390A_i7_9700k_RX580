@@ -1,7 +1,7 @@
 # Clover_macOS_Sonoma_Asus_Prime_Z390A_i7_9700k_RX580
 This is a Clover version of ASUS Z390-A Prime Hackintosh EFI. It works on macOS Monterey 14,4). Sleep, Airdrop and Handoff are supported.
 
-![image](OS_Screenshot.png)
+
 
 ## Notes
 For USB ports I builded USBMap.kext with usb3 disabled to the 2 dark blue ports at the side of the ethernet ports and the usb2 functionality disabled to one of the ports right under the hdmi port. All other ports of the mono and the 2 usb3.1 ports to the side of the case will have all their functionality active.
@@ -55,3 +55,5 @@ Apple for macOS
 acidanthera for OpenCore etc.
 
 headkaze for Hackintool
+
+m4ary for OpenCore-Asus-Prime-Z390A_i7-9700K_RX580
